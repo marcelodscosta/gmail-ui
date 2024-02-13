@@ -1,3 +1,4 @@
+import { Loading } from '@/components/Loading';
 import '@/styles/global.css';
 
 import {
@@ -21,11 +22,10 @@ export default function Layout() {
     Roboto_700Bold,
   });
 
-
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar barStyle={'dark-content'} />
-      <Slot />
+      {!fontsLoaded ? <Loading /> : <Slot />}
     </GestureHandlerRootView>
   );
 }
