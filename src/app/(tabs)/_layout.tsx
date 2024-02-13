@@ -22,10 +22,14 @@ export default function Layout() {
     Roboto_700Bold,
   });
 
+  if (!fontsLoaded) {
+    <Loading />
+  };
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar barStyle={'dark-content'} />
-      {!fontsLoaded ? <Loading /> : <Slot />}
+      <Slot />
     </GestureHandlerRootView>
   );
 }
