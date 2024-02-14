@@ -20,6 +20,7 @@ function InputField({ ...rest }: TextInputProps) {
     <TextInput
       className="flex-1 font-normal text-base text-white"
       placeholderTextColor={colors.gray[400]}
+      cursorColor={colors.blue[600]}
       {...rest}
     />
   );
