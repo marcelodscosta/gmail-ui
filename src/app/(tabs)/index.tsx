@@ -5,6 +5,7 @@ import { Email } from "@/components/Email";
 import { Input } from "@/components/Input";
 import { MenuButton } from "@/components/MenuButton";
 
+import { FloatButton } from "@/components/FloatButton";
 import { EMAILS } from "@/utils/emails";
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
         ListHeaderComponent={() => (<Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">Entrada</Text>)}
       />
 
-
+      <FloatButton icon="edit" />
     </View>
   );
 };
