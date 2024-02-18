@@ -4,20 +4,24 @@ import { Avatar } from "./Avatar";
 import { colors } from "@/styles/colors";
 import { MaterialIcons } from '@expo/vector-icons';
 
-export const Email = () => {
+import { EmailDataProps } from "@/utils/emails";
+
+
+export const Email = (item: EmailDataProps) => {
   return <View className="w-full flex-row gap-4" >
 
-    <Avatar source={{ uri: 'https://github.com/marcelodscosta.png' }} />
+    <Avatar source={{ uri: item.avatar }} />
 
     <View className='flex-1'>
 
       <View className="flex-row items-center gap-1">
 
-        <MaterialIcons name="label-important" size={16} color={colors.yellow[600]} />
+        {item.marker &&
+          <MaterialIcons name="label-important" size={16} color={colors.yellow[600]} />
+        }
+        <Text className="font-body text-gray-400 flex-1">{item.name}</Text>
 
-        <Text className="font-body text-gray-400 flex-1">Marcelo Costa</Text>
-
-        <Text className="font-body text-gray-400">19 de Fev.</Text>
+        <Text className="font-body text-gray-400">{item.date}</Text>
 
       </View>
       <Text
@@ -25,7 +29,7 @@ export const Email = () => {
         numberOfLines={1}
         lineBreakMode="tail"
       >
-        Assunto de e-mail
+        {item.subject}
       </Text>
 
       <View className="flex-row items-center gap-4">
@@ -35,9 +39,9 @@ export const Email = () => {
           numberOfLines={1}
           lineBreakMode="tail"
         >
-          Essa é a mensagem do e-mail
+          {item.message}
         </Text>
-        <MaterialIcons name="star" size={22} color={colors.blue[600]} />
+        <MaterialIcons name={item.start ? "star" : "star-outline"} size={22} color={colors.blue[600]} />
       </View>
 
     </View>

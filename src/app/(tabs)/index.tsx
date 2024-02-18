@@ -1,8 +1,11 @@
+import { FlatList, Text, View } from "react-native";
+
 import { Avatar } from "@/components/Avatar";
 import { Email } from "@/components/Email";
 import { Input } from "@/components/Input";
 import { MenuButton } from "@/components/MenuButton";
-import { View } from "react-native";
+
+import { EMAILS } from "@/utils/emails";
 
 export default function Home() {
   return (
@@ -16,7 +19,14 @@ export default function Home() {
         />
       </Input>
 
-      <Email />
+      <FlatList
+        data={EMAILS}
+        keyExtractor={({ id }) => (id)}
+        renderItem={({ item }) => (<Email {...item} />)}
+        contentContainerClassName="gap-6"
+        ListHeaderComponent={() => (<Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">Entrada</Text>)}
+      />
+
 
     </View>
   );
