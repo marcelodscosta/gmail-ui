@@ -19,7 +19,7 @@ export const Email = (item: EmailDataProps) => {
         {item.marker &&
           <MaterialIcons name="label-important" size={16} color={colors.yellow[600]} />
         }
-        <Text className="font-body text-gray-400 flex-1">{item.name}</Text>
+        <Text className="font-heading text-gray-400 flex-1">{item.name}</Text>
 
         <Text className="font-body text-gray-400">{item.date}</Text>
 

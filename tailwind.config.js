@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import { fontFamily } from './src/styles/font-family';
 
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
@@ -30,7 +29,6 @@ module.exports = {
           600: '#4285F4',
         },
       },
-      fontFamily,
     },
     fontFamily: {
       heading: 'Roboto_700Bold',
