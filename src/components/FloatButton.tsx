@@ -16,7 +16,7 @@ export function FloatButton({ icon, ...rest }: FloatButtonProp) {
     >
       {icon && <MaterialIcons name={icon} size={22} color={colors.orange[500]} />}
 
-      <Text className="text-orange-500 font-subtitle">Escrever</Text>
+      <Text className="text-orange-500">Escrever</Text>
     </TouchableOpacity>
   );
 };

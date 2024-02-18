@@ -25,7 +25,7 @@ export default function Home() {
         keyExtractor={({ id }) => (id)}
         renderItem={({ item }) => (<Email {...item} />)}
         contentContainerClassName="gap-6"
-        ListHeaderComponent={() => (<Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">Entrada</Text>)}
+        ListHeaderComponent={() => (<Text className="uppercase text-gray-400 text-sm  mt-6">Entrada</Text>)}
       />
 
       <FloatButton icon="edit" />
