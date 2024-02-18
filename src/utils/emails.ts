@@ -29,58 +29,5 @@ export const EMAILS = [
     start: false,
     date: "13 de fev."
   },
-  {
-    id: '4',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
-  {
-    id: '5',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
-  {
-    id: '6',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
-  {
-    id: '7',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
-  {
-    id: '8',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
-  {
-    id: '9',
-    name: 'Eduard',
-    avatar: "https://mighty.tools/mockmind-api/content/human/70.jpg",
-    subject: 'De onde isso vem?',
-    message: 'Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.',
-    start: false,
-    date: "13 de fev."
-  },
+
 ];
