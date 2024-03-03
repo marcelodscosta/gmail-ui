@@ -1,10 +1,20 @@
 import { colors } from "@/styles/colors";
 import { MaterialIcons } from "@expo/vector-icons";
 import clsx from "clsx";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, PressableProps, Text, View } from "react-native";
+
+export type IconNameProps = keyof typeof MaterialIcons.glyphMap;
+
+type DrawerButtonProps = PressableProps & {
+  title: string,
+  isFocused?: boolean,
+  isDivider?: boolean,
+  iconName: IconNameProps,
+  notification?: number,
+};
 
 
-export function DrawerButton() {
+export function DrawerButton({ title, ...rest }: DrawerButtonProps) {
 
   const isDividir = true;
   const isFocused = true;
@@ -25,7 +35,7 @@ export function DrawerButton() {
 
         <Text className={clsx("text-white font-subtitle text-base", {
           "text-orange-300": isFocused,
-        })}>Todas as caixas de e-mails</Text>
+        })}>{title}</Text>
 
         <Text className={clsx("text-gray-400 text-sm font-body", {
           "text-orange-300": isFocused

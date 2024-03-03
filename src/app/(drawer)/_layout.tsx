@@ -11,8 +11,12 @@ export default function DrawerLayout() {
         drawerStyle: {
           width: '75%'
         }
-      }}>
-      <Drawer.Screen name='(tabs)' />
+      }}
+    >
+      <Drawer.Screen
+        name='(tabs)'
+        options={{ title: "Todas as caixas de entrada" }}
+      />
     </Drawer>
   );
 };

@@ -25,15 +25,15 @@ export function DrawerContent(drawerProps: DrawerContentComponentProps) {
               const isFocused = drawerProps.state.index === index;
               const options = drawerProps.descriptors[route.key].options;
 
-              // if (options.title === undefined) {
-              //   return
-              // }
-              // console.log(options.title);
+              if (options.title === undefined) {
+                return
+              }
+              console.log(options.title);
 
 
               return (
                 <View key={route.key}>
-                  <DrawerButton />
+                  <DrawerButton title={options.title} />
                 </View>
               )
             })
