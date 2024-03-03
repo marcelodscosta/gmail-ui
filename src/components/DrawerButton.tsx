@@ -14,17 +14,15 @@ type DrawerButtonProps = PressableProps & {
 };
 
 
-export function DrawerButton({ title, ...rest }: DrawerButtonProps) {
+export function DrawerButton({ title, isFocused, isDivider, notification, ...rest }: DrawerButtonProps) {
 
-  const isDividir = true;
-  const isFocused = true;
 
   return (
-    <Pressable className={clsx("py-2 w-full", { "border-b ml-10 border-gray-500": isDividir })}>
+    <Pressable className={clsx("py-2 w-full", { "border-b ml-10 border-gray-500": isDivider })}>
 
       <View
         className={clsx("flex-row items-center gap-4 h-14 px-6 -ml-2 w-full", {
-          "-ml-14": isDividir,
+          "-ml-14": isDivider,
         })}>
 
         <MaterialIcons
@@ -39,7 +37,7 @@ export function DrawerButton({ title, ...rest }: DrawerButtonProps) {
 
         <Text className={clsx("text-gray-400 text-sm font-body", {
           "text-orange-300": isFocused
-        })}>5</Text>
+        })}>{notification}</Text>
       </View>
     </Pressable>
   );

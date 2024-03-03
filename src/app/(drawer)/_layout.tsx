@@ -1,3 +1,4 @@
+import { CustomOptions } from '@/@types/navigation';
 import { DrawerContent } from '@/components/DrawerContent';
 import { Drawer } from 'expo-router/drawer';
 
@@ -15,8 +16,14 @@ export default function DrawerLayout() {
     >
       <Drawer.Screen
         name='(tabs)'
-        options={{ title: "Todas as caixas de entrada" }}
+        options={{
+          title: "Todas as caixas de entrada",
+          iconName: 'all-inbox',
+          isDividir: true,
+          notification: 5
+        } as CustomOptions}
       />
+
     </Drawer>
   );
 };
