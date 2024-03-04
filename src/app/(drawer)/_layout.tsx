@@ -24,6 +24,57 @@ export default function DrawerLayout() {
         } as CustomOptions}
       />
 
+      <Drawer.Screen
+        name='inbox'
+        options={{
+          title: "Entrada",
+          iconName: 'inbox',
+          isDividir: true,
+          notification: 3
+        } as CustomOptions}
+      />
+
+      <Drawer.Screen
+        name='important'
+        options={{
+          title: "Importante",
+          iconName: 'label-important-outline',
+          isDividir: true,
+          notification: 3
+        } as CustomOptions}
+      />
+
+      <Drawer.Screen
+        name='send'
+        options={{
+          title: "Enviado",
+          iconName: 'send',
+          isDividir: false,
+          notification: 3
+        } as CustomOptions}
+      />
+
+      <Drawer.Screen
+        name='exit-box'
+        options={{
+          title: "Caixa de saída",
+          iconName: 'outbox',
+          isDividir: false,
+          notification: 3
+        } as CustomOptions}
+      />
+
+      <Drawer.Screen
+        name='general'
+        options={{
+          title: "Geral",
+          iconName: 'outbox',
+          isDividir: false,
+          notification: 3,
+          sectionTitle: "Outros"
+        } as CustomOptions}
+      />
+
     </Drawer>
   );
 };

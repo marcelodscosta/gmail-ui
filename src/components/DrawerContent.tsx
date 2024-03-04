@@ -1,6 +1,6 @@
 import { CustomOptions } from '@/@types/navigation';
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
-import { Image, ScrollView, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 import { DrawerButton } from './DrawerButton';
 
 
@@ -34,6 +34,13 @@ export function DrawerContent(drawerProps: DrawerContentComponentProps) {
 
               return (
                 <View key={route.key}>
+                  {
+                    options.sectionTitle && (
+
+                      <Text className='text-gray-400 text-sm font-heading uppercase ml-4 mt-6'>{options.sectionTitle}</Text>
+
+                    )
+                  }
                   <DrawerButton
                     title={options.title}
                     iconName={options.iconName}
